@@ -8,15 +8,15 @@
 @livewire('componentes.app.menu')
 
 <div class="relative text-white mont" style="background-image: url({{ asset('img/recetas/' . $dtosReceta->pathImg) }})">
-    <div class="absolute inset-0 bg-blue-100 bg-opacity-95 z-10"></div>
+    <div class="absolute inset-0 z-10 bg-blue-100 bg-opacity-95"></div>
 </div>
 
-<div class="relative text-white bg-no-repeat bg-cover pb-48"
+<div class="relative pb-48 text-white bg-no-repeat bg-cover"
     style="background-image: url({{ asset('img/recetas/' . $dtosReceta->pathImg) }})">
     {{-- Pseudo-elemento para agregar el color azulado transparente --}}
-    <div class="absolute inset-0 bg-blue-100 bg-opacity-95 z-10"></div>
+    <div class="absolute inset-0 z-10 bg-blue-100 bg-opacity-95"></div>
 
-    <div class="grid lg:grid-cols-2 px-6 py-16 mx-auto max-w-7xl md:px-16 mont">
+    <div class="grid px-6 py-16 mx-auto lg:grid-cols-2 max-w-7xl md:px-16 mont">
 
         <div class="relative z-20 lg:w-[400px] xl:w-[458px] p-6 lg:p-8 flex flex-col gap-6"
             style="background-image: linear-gradient(180deg, rgba(197,154,111,1) 42%, rgba(197,154,111,0) 82%);">
@@ -25,9 +25,9 @@
             <h2 class="hidden lg:block subtitulo eucrosia">Ingredientes:</h2>
 
 
-            <ul class="pl-3 list-disc list-inside order-3">
+            <ul class="order-3 pl-3 list-disc list-inside">
                 @foreach ($dtosIngredientes as $ingrediente)
-                  <li>{{ $ingrediente->descIngrediente }}</li>
+                <li>{{ $ingrediente->descIngrediente }}</li>
                 @endforeach
             </ul>
 
@@ -35,7 +35,7 @@
                 src="{{ asset('img/recetas/' . $dtosReceta->pathImg) }}" alt="Receta" class="z-10">
         </div>
 
-        <div class="flex flex-col gap-8 relative z-20">
+        <div class="relative z-20 flex flex-col gap-8">
 
             <div class="space-y-8 lg:mb-24 lg:mt-6">
                 <h2 class="hidden lg:flex subtitulo eucrosia">{{ $dtosReceta->nombre }}</h2>
@@ -69,24 +69,24 @@
                     </li>
                 </ul>
 
-                  @foreach ($dtosPrepar as $it)
-                        @if ($it->tagHtml == 't')
-                              <h2 class="{{ $it->estilos }}">{{ $it->parrafo }}</h2>
-                        @endif
-                        @if ($it->tagHtml == 'p')
-                              <p>{{ $it->parrafo }}</p>
-                        @endif
-                  @endforeach
+                @foreach ($dtosPrepar as $it)
+                @if ($it->tagHtml == 't')
+                <h2 class="{{ $it->estilos }}">{{ $it->parrafo }}</h2>
+                @endif
+                @if ($it->tagHtml == 'p')
+                <p>{{ $it->parrafo }}</p>
+                @endif
+                @endforeach
 
             </div>
 
             {{-- paginación --}}
-            <div class="flex gap-3 justify-center lg:justify-between">
+            <div class="flex justify-between gap-3">
 
                 @if($recetaAnterior)
 
-                <div class="flex flex-col items-start">
-                    <a class="w-12 bg-gold-100 shadow p-1 flex flex-col"
+                <div class="flex flex-col items-start basis-1/3">
+                    <a class="flex flex-col w-12 p-1 shadow bg-gold-100"
                         href="{{ route('RecetaDetalle', [$ori, 'id' => $recetaAnterior->id]) }}"><svg
                             clip-rule="evenodd" fill-rule="evenodd" fill="white" stroke-linejoin="round"
                             stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -94,20 +94,30 @@
                                 d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z"
                                 fill-rule="nonzero" />
                         </svg></a>
-                    <div class="hidden lg:flex max-w-[85%] text-left font-[600] mt-4">{{ $recetaAnterior->nombre }}</div>
+                    <div class="hidden lg:flex text-left font-[600] mt-4">{{ $recetaAnterior->nombre }}</div>
 
                 </div>
 
-                <div class="hidden lg:block text-center text-3xl font-[600]">{{ $dtosReceta->id }}</div>
+                <div class="hidden lg:inline-block text-center text-3xl font-[600] basis-1/3">{{ $dtosReceta->id
+                    }}</div>
 
                 @else
-                    <span></span>
+                <div>
+                    <a class="flex flex-col w-12 p-1 shadow bg-[#717171c9]" href=""><svg clip-rule="evenodd"
+                            fill-rule="evenodd" fill="white" stroke-linejoin="round" stroke-miterlimit="2"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z"
+                                fill-rule="nonzero" />
+                        </svg></a>
+                </div>
+
                 @endif
 
                 @if($recetaPosterior)
 
-                <div class="flex flex-col items-end">
-                    <a class="w-12 bg-gold-100 shadow p-1 flex flex-col"
+                <div class="flex flex-col items-end basis-1/3">
+                    <a class="flex flex-col w-12 p-1 shadow bg-gold-100"
                         href="{{ route('RecetaDetalle', [$ori, 'id' => $recetaPosterior->id]) }}"><svg
                             clip-rule="evenodd" fill="white" fill-rule="evenodd" stroke-linejoin="round"
                             stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -115,11 +125,19 @@
                                 d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
                                 fill-rule="nonzero" />
                         </svg></a>
-                    <div class="hidden lg:block max-w-[85%] text-right font-[600] mt-4">{{ $recetaPosterior->nombre }}</div>
+                    <div class="hidden lg:inline-block text-right font-[600] mt-4">{{ $recetaPosterior->nombre }}</div>
                 </div>
 
                 @else
-                    <span></span>
+                <div class="flex justify-end h-[48px] basis-1/3">
+                    <a class="flex flex-col w-12 p-1 shadow bg-[#717171c9]" href=""><svg clip-rule="evenodd"
+                            fill="white" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                fill-rule="nonzero" />
+                        </svg></a>
+                </div>
                 @endif
 
             </div>
