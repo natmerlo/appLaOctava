@@ -5,4 +5,7 @@ Arma68on.
 
 
 composer update
-base de datos
+base de datos .env borrar contraseña
+
+php artisan serve
+npm run serve
