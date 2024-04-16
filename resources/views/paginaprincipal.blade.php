@@ -18,7 +18,10 @@
 
 
 {{-- Linea Montesano --}}
-@livewire('componentes.lineamontesanoinicio')
+<div class="xl:pb-[130px] xl:pt-[calc(133px-64px)]">
+    @livewire('componentes.lineamontesanoinicio')
+</div>
+
 
 <div class="bg-blue-100 lg:pb-36">
     {{-- Recetas Destacadas --}}
