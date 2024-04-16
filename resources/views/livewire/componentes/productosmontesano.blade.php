@@ -1,7 +1,7 @@
 <div class="px-6 py-16 mx-auto max-w-[84rem] md:px-16 xl:px-24 text-green mont lg:space-y-20">
 
     <div class="mb-8 space-y-4 text-center">
-        <img class="mx-auto" src="img/montesano.png" alt="Linea Montesano Logo">
+        <img class="w-[530px] h-[135px] mx-auto" src="img/montesano.png" alt="Linea Montesano Logo">
         <p class="lg:text-xl">Conozca todos los exquisitos productos de la línea Montesano, nuestra marca
             Premium.</p>
     </div>
@@ -19,9 +19,9 @@
             <h3 class="text-xl font-bold">{{ $producto->nombre }}</h3>
 
             <ul class="italic font-light text-blue ">
-                {{--  
+                {{--
                 @if($producto->tiempoCurado!='')
-                    <li>Curado: {{ $producto->tiempoCurado }}</li>
+                <li>Curado: {{ $producto->tiempoCurado }}</li>
                 @endif
                 --}}
 
