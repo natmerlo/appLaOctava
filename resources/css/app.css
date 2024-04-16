@@ -11,7 +11,6 @@
       flex-col
       p-1
       sm:p-[1rem]
-      rounded-2xl
       mx-auto
       h-[95%]
       w-[95%]
@@ -22,8 +21,25 @@
       relative
       cursor-default
       overflow-y-auto
-      sm:overflow-y-hidden
       sm:top-[6rem];
+}
+
+.panel-modal-3 {
+  @apply flex
+      flex-col
+      p-1
+      sm:p-[1rem]
+      mx-auto
+      h-[95%]
+      w-[95%]
+      md:h-[80%]
+      md:w-[85%]
+      top-[1rem]
+      bg-white
+      relative
+      cursor-default
+      overflow-y-auto
+      md:top-[4rem];
 }
 
 .panel-modal-1 {
@@ -31,7 +47,6 @@
       flex-col
       p-1
       sm:p-[1rem]
-      rounded-2xl
       mx-auto
       h-[95%]
       w-[95%]
@@ -47,22 +62,20 @@
 }
 
 .panel-modal-2 {
-      @apply
-      flex
+  @apply flex
       flex-col
-      p-1
+      p-4
       sm:p-[1rem]
-      rounded-2xl
       mx-2
       sm:mx-auto
       my-2
-      sm:w-[70%]
+      sm:w-[75%]
       sm:h-[75%]
       relative
       cursor-default
       bg-white
       overflow-y-auto
-      sm:top-[6rem];
+      sm:top-[5rem];
 }
 
 .btn-uno {
@@ -73,12 +86,10 @@
     inline-flex
     justify-center
     border-[1px]
-    border-blue-200
+    border-blue-100
     text-white
-    bg-blue-200
-    rounded-2xl
-    hover:bg-white
-    hover:text-blue-200;
+    bg-blue-100
+    hover:bg-blue-200;
 }
 
 blockquote,
