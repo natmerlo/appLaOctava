@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+  display: none;
+}
+
+.panel-modal {
+  @apply flex
+      flex-col
+      p-1
+      sm:p-[1rem]
+      rounded-2xl
+      mx-auto
+      h-[95%]
+      w-[95%]
+      top-[1rem]
+      sm:h-[75%]
+      sm:w-[70%]
+      bg-white
+      relative
+      cursor-default
+      overflow-y-auto
+      sm:overflow-y-hidden
+      sm:top-[6rem];
+}
+
+.panel-modal-1 {
+  @apply flex
+      flex-col
+      p-1
+      sm:p-[1rem]
+      rounded-2xl
+      mx-auto
+      h-[95%]
+      w-[95%]
+      top-[1rem]
+      sm:h-[75%]
+      sm:w-[70%]
+      bg-blue-100
+      relative
+      cursor-default
+      overflow-y-auto
+      sm:overflow-y-hidden
+      sm:top-[6rem];
+}
+
+.panel-modal-2 {
+      @apply
+      flex
+      flex-col
+      p-1
+      sm:p-[1rem]
+      rounded-2xl
+      mx-2
+      sm:mx-auto
+      my-2
+      sm:w-[70%]
+      sm:h-[75%]
+      relative
+      cursor-default
+      bg-white
+      overflow-y-auto
+      sm:top-[6rem];
+}
+
+.btn-uno {
+  @apply px-3
+    py-2
+    text-sm
+    font-medium
+    inline-flex
+    justify-center
+    border-[1px]
+    border-blue-200
+    text-white
+    bg-blue-200
+    rounded-2xl
+    hover:bg-white
+    hover:text-blue-200;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.inter {
+  font-family: "Inter";
+}
+
+.mont {
+  font-family: "Montserrat";
+}
+
+.lato {
+  font-family: "Lato";
+}
+
+.eucrosia {
+  font-family: "EucrosiaUPC";
+}
+
+@layer base {
+  .subtitulo {
+    @apply text-4xl font-semibold lg:text-5xl;
+  }
+}
+
+@layer components {
+  .firulete {
+    background-image: url("/public/img/recursos/firulete_top.png"),
+      url("/public/img/recursos/firulete_bottom.png");
+    background-repeat: no-repeat;
+    background-position: top right, bottom right;
+    background-size: 20%;
+  }
+
+  .firulete-footer {
+    background-image: url("/public/img/recursos/firulete_footer_tr.png"),
+      url("/public/img/recursos/firulete_footer_br.png"),
+      url("/public/img/recursos/firulete_footer_tl.png"),
+      url("/public/img/recursos/firulete_footer_bl.png");
+    background-repeat: no-repeat;
+    background-position: top right, bottom right, top left, bottom left;
+    background-size: 9%;
+  }
+
+  .firulete-historia {
+    background-image: url("/public/img/recursos/firulete_historia_tl.png"),
+      url("/public/img/recursos/firulete_historia_br.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: 8%;
+  }
+
+  .firulete-montesano {
+    background-image: url("/public/img/recursos/firulete_historia_tl.png"),
+      url("/public/img/recursos/firulete_historia_br.png"),
+      url("/public/img/recursos/firulete_historia_tl.png"),
+      url("/public/img/recursos/firulete_historia_br.png");
+
+    background-repeat: no-repeat;
+    background-position: top left, bottom right, top right, bottom left;
+    background-size: 8%;
+  }
+
+  .firulete-producto {
+    background-image: url("/public/img/recursos/firulete_producto.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 25%;
+  }
+
+  .firulete-producto-mont {
+    background-image: url("/public/img/recursos/firulete_montesano.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 25%;
+  }
+
+  .firulete-descripcion-mont {
+    background-image: url("/public/img/recursos/firulete_corona.svg"),
+      url("/public/img/recursos/firulete_b_corona.svg");
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+  }
+
+  @media (max-width: 425px) {
+    .firulete-descripcion-mont {
+      background-size: 35%;
+    }
+  }
+
+  .firulete-recetas {
+    background-image: url("/public/img/recursos/firulete_recetas_tl.png"),
+      url("/public/img/recursos/firulete_recetas_br.png"),
+      url("/public/img/recursos/firulete_recetas_tr.png"),
+      url("/public/img/recursos/firulete_recetas_bl.png");
+
+    background-repeat: no-repeat;
+    background-position: top right, bottom left, top left, bottom right;
+    background-size: 10%;
+  }
+
+  .firulete-descripcion-prod {
+    background-image: url("/public/img/recursos/firulete_producto_mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  /* Slider productos */
+
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    filter: blur(4px);
+    opacity: 0.3;
+  }
+
+  .swiper-slide.swiper-slide-active {
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  #recetas.swiper-slide {
+    opacity: 0.8;
+  }
+
+  #recetas.swiper-slide.swiper-slide-active {
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  :root {
+    --swiper-theme-color: #c59a6f;
+  }
+
+  select option {
+    font-size: 18px;
+    color: rgb(88, 88, 113);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 43px;
+    height: 43px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 28px;
+  }
+
+  .recetas > .swiper-button-next:after,
+  .recetas > .swiper-button-prev:after {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  /* backgrounds banners */
+}
