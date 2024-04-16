@@ -1,71 +1,36 @@
-{{-- <div
-    class="flex flex-col-reverse items-center gap-4 px-4 my-10 md:m-0 md:px-16 md:h-screen md:flex-row md:gap-7 xl:px-32 ">
-
-    <div class="flex flex-col gap-4 lg:flex-row lg:gap-6 ">
-
-        <div>
-            <img class="lg:object-none lg:h-[75vh]" src="img/inicio/jamon_montesano.jpg" alt="">
-        </div>
-        <div>
-            <img class="lg:object-none lg:h-[75vh]" src="img/inicio/jamon_montesano_1.jpg" alt="">
-        </div>
-
-    </div>
-
-    <div class="flex flex-col gap-4 lg:px-7 md:h-[75vh] md:firulete justify-center">
-
-
-        <h2 class="eucrosia subtitulo">Linea Montesano</h2>
-
-
-        <div class="flex flex-col gap-4 mb-0 parrafo">
-            <p>Como en Italia, con el mismo conocimiento y tecnología, con nuestra marca <spam>Montesano<spam>
-                        elaboramos prductos únicos.</p>
-            <p>Como nuestro <span>Jamón Crudo Parma</spam> rico en proteínas y con bajo contenido de sal y nuestra
-                    <spam>Mortadela Puro Cerdo con pistacho</spam>
-            </p>
-        </div>
-
-        <a href="{{ route('mnuMontesano') }}" class="text-base inter btn-dos">
-            Ver más
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-            </svg>
-        </a>
-
-    </div>
-
-</div> --}}
 <div class="px-6 pb-16 mx-auto text-blue-100 lg:grid-col-2 max-w-7xl md:px-16 mont">
     <div class="grid lg:grid-cols-2 lg:gap-[78px]">
-    
+
         <div class="content-center order-2 lg:firulete">
             <div class="pl-4 border-l-[3px] lg:border-l-[0px] border-gold-100 mb-8 ">
                 <h2 class="subtitulo eucrosia">Linea Montesano</h3>
             </div>
-            
+
             <div class="px-5 space-y-9">
                 <div class="space-y-5 lg:text-xl">
-                    <p>Como en Italia, con el mismo conocimiento y tecnología, con nuestra marca <strong>Montesano</strong>
+                    <p>Como en Italia, con el mismo conocimiento y tecnología, con nuestra marca
+                        <strong>Montesano</strong>
                         elaboramos
-                        productos únicos.</p>
-                    <p>Como nuestro <strong>Jamón Crudo Parma</strong> rico en proteínas y con bajo contenido de sal y nuestra
+                        productos únicos.
+                    </p>
+                    <p>Como nuestro <strong>Jamón Crudo Parma</strong> rico en proteínas y con bajo contenido de sal y
+                        nuestra
                         <strong>Mortadela Puro
                             Cerdo</strong> con
                         pistacho.
                     </p>
                 </div>
-            
+
                 <div class="lg:hidden">
                     <img class="h-[390px] object-cover" src="img/inicio/jamon_montesano.jpg" alt="">
                 </div>
-            
-                
-                <a class="hidden text-[18px] font-bold lg:flex lg:flex-row text-gold-100 inter" href="{{ route('mnuMontesano') }}">
+
+
+                <a class="hidden text-[18px] font-bold lg:flex lg:flex-row text-gold-100 inter"
+                    href="{{ route('mnuMontesano') }}">
                     Ver más
-                    <svg class="w-4 ml-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <svg class="w-4 ml-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
@@ -83,6 +48,6 @@
             <img class="w-[50%] object-cover" src="img/inicio/jamon_montesano.jpg" alt="">
             <img class="w-[50%] object-cover" src="img/inicio/jamon_montesano_1.jpg" alt="">
         </div>
-        
+
     </div>
 </div>

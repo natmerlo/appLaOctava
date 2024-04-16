@@ -1,6 +1,6 @@
-<div class="px-10 py-16 mx-auto md:px-16 text-blue-100 mont max-w-7xl text-center">
+<div class="px-10 py-16 mx-auto text-center text-blue-100 md:px-16 mont max-w-7xl">
 
-    <h2 class="subtitulo eucrosia mb-4">
+    <h2 class="mb-4 xl:text-[83px] subtitulo eucrosia">
         ¡Manos a la obra!
     </h2>
 
@@ -25,7 +25,7 @@
                 </h3>
             </a>
 
-            <div class="md:hidden shadow p-5 w-full mb-8">
+            <div class="w-full p-5 mb-8 shadow md:hidden">
                 <p class="lato font-[800] text-xl">{{ $it->nombre }}</p>
             </div>
 
