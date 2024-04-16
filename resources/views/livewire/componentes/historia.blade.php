@@ -4,7 +4,7 @@
         <div class="grid md:grid-cols-2 justify-center mb-12 md:gap-12 gap-6 xl:mb-[86px] xl:gap-[75px] content-center">
 
             <div class="lg:order-2">
-                <h3 class="subtitulo eucrosia font-semibold mb-4 text-justify">El Frigorífico</h3>
+                <h3 class="mb-4 font-semibold text-justify subtitulo eucrosia">El Frigorífico</h3>
                 <div class="space-y-4 ">
                     <p>Frigorífico LA OCTAVA nació en 1992. Responde a una larga tradición familiar en la elaboración de
                         jamones
@@ -34,17 +34,19 @@
 
             <div class="flex flex-col lg:flex-row gap-5 lg:order-1 xl:pl-[27px]">
                 <div class="hidden md:flex xl:min-h-[413px]">
-                    <img class="w-full object-cover object-center h-full" src="img/historia/1.jpg" alt="">
+                    <img class="object-cover object-center w-full h-full" src="img/historia/historia_3.jpg"
+                        alt="Imágenes de frigorífico La Octava">
                 </div>
                 <div class="h-[266px] md:h-auto xl:min-h-[413px]">
-                    <img class=" w-full object-cover object-center h-full" src="img/historia/2.jpg" alt="">
+                    <img class="object-cover object-center w-full h-full " src="img/historia/historia_2.jpg"
+                        alt="Imágenes de frigorífico La Octava">
                 </div>
             </div>
 
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 items-center lg:items-stretch text-justify xl:gap-[83px]">
-            <div class="space-y-4 md:order-2 lg:order-1 content-center ">
+            <div class="content-center space-y-4 md:order-2 lg:order-1 ">
                 <p>De esta forma elaboramos nuestros jamones y demás productos empleando métodos artesanales y
                     tradicionales, consiguiendo
                     en sus distintas variedades un producto final con un aroma, sabor y textura que solo se obtiene de
@@ -66,10 +68,12 @@
 
             <div class="flex flex-col lg:flex-row gap-5 lg:order-1 xl:pr-[27px]">
                 <div class="h-[266px] md:h-auto xl:min-h-[394px]">
-                    <img class="w-full object-cover object-center h-full" src="img/historia/3.jpg" alt="">
+                    <img class="object-cover object-center w-full h-full" src="img/historia/historia_4.jpg"
+                        alt="Imágenes de frigorífico La Octava">
                 </div>
                 <div class="hidden md:flex xl:min-h-[394px]">
-                    <img class="w-full object-cover object-center h-full" src="img/historia/4.jpg" alt="">
+                    <img class="object-cover object-center w-full h-full" src="img/historia/historia_1.jpg"
+                        alt="Imágenes de frigorífico La Octava">
                 </div>
             </div>
         </div>

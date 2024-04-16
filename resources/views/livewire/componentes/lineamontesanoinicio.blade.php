@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="lg:hidden">
-                    <img class="h-[390px] object-cover" src="img/inicio/jamon_montesano.jpg" alt="">
+                    <img class="h-[390px] object-cover" src="img/inicio/montesano_inicio_2.png" alt="">
                 </div>
 
 
@@ -45,8 +45,8 @@
         </div>
 
         <div class="hidden gap-6 lg:flex h-[540px]">
-            <img class="w-[50%] object-cover" src="img/inicio/jamon_montesano.jpg" alt="">
-            <img class="w-[50%] object-cover" src="img/inicio/jamon_montesano_1.jpg" alt="">
+            <img class="w-[50%] object-cover" src="img/inicio/montesano_inicio_1.png" alt="">
+            <img class="w-[50%] object-cover" src="img/inicio/montesano_inicio_2.png" alt="">
         </div>
 
     </div>
