@@ -279,4 +279,44 @@ img {
   .bg-inicio-mobile{
     background-image: url("/public/img/portadas/inicio_mobile.jpg");
   }
+
+   .bg-productos-mobile{
+    background-image: url("/public/img/portadas/productos_mobile.jpg");
+  }
+
+  .bg-productos-mobile{
+    background-image: url("/public/img/portadas/productos.jpg");
+  }
+
+  .bg-montesano-mobile{
+    background-image: url("/public/img/portadas/montesano_mobile.jpg");
+  }
+
+  .bg-montesano{
+    background-image: url("/public/img/portadas/montesano.jpg");
+  }
+
+  .bg-historia-mobile{
+    background-image: url("/public/img/portadas/historia_mobile.jpg");
+  }
+
+  .bg-historia{
+    background-image: url("/public/img/portadas/historia.jpg");
+  }
+
+  .bg-contacto-mobile{
+    background-image: url("/public/img/portadas/contacto_mobile.jpg");
+  }
+
+  .bg-contacto{
+    background-image: url("/public/img/portadas/contacto.jpg");
+  }
+
+  .bg-recetas-mobile{
+    background-image: url("/public/img/portadas/recetas_mobile.jpg");
+  }
+
+  .bg-recetas{
+    background-image: url("/public/img/portadas/recetas.jpg");
+  }
 }
