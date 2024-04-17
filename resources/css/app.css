@@ -272,4 +272,11 @@ img {
   }
 
   /* backgrounds banners */
+  .bg-inicio{
+    background-image: url("/public/img/portadas/banner_inicio.png");
+  }
+
+  .bg-inicio-mobile{
+    background-image: url("/public/img/portadas/inicio_mobile.jpg");
+  }
 }
